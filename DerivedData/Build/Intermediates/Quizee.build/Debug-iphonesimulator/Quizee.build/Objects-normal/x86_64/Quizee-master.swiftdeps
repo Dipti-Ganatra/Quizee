@@ -1,0 +1,6 @@
+version: "Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)"
+options: "db0f70973c0917a42597e940320c5ec6"
+build_time: [550340935, 519425000]
+inputs:
+  "/Users/devangnathwani/Desktop/Dipti/apps/Quizee/Quizee/ViewController.swift": [550340932, 0]
+  "/Users/devangnathwani/Desktop/Dipti/apps/Quizee/Quizee/AppDelegate.swift": [550340932, 0]
