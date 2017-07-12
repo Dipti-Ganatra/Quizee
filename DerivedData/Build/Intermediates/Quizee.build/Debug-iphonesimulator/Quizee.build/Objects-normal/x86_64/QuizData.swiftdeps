@@ -1,0 +1,188 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "QuizData"
+provides-nominal:
+- "C6Quizee8QuizData"
+provides-member:
+- ["C6Quizee8QuizData", ""]
+provides-dynamic-lookup:
+- "strId"
+- "C"
+- "B"
+- "ans"
+- "A"
+- "D"
+- "ques"
+depends-top-level:
+- "NSObject"
+- "QuizData"
+- "StringLiteralType"
+depends-member:
+- ["Ps9AnyObject", "A"]
+- ["Ps9AnyObject", "B"]
+- ["Ps9AnyObject", "C"]
+- ["Ps9AnyObject", "D"]
+- ["Ps9AnyObject", "ans"]
+- ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "ques"]
+- ["Ps9AnyObject", "strId"]
+- ["Ps9AnyObject", ""]
+- ["Ps7CVarArg", "A"]
+- ["Ps7CVarArg", "B"]
+- ["Ps7CVarArg", "C"]
+- ["Ps7CVarArg", "D"]
+- ["Ps7CVarArg", "ans"]
+- ["Ps7CVarArg", "init"]
+- ["Ps7CVarArg", "ques"]
+- ["Ps7CVarArg", "strId"]
+- ["Ps7CVarArg", ""]
+- ["Ps10Comparable", "init"]
+- ["Ps28CustomDebugStringConvertible", "A"]
+- ["Ps28CustomDebugStringConvertible", "B"]
+- ["Ps28CustomDebugStringConvertible", "C"]
+- ["Ps28CustomDebugStringConvertible", "D"]
+- ["Ps28CustomDebugStringConvertible", "ans"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "ques"]
+- ["Ps28CustomDebugStringConvertible", "strId"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- ["Ps29CustomPlaygroundQuickLookable", "init"]
+- ["Ps17CustomReflectable", "init"]
+- ["Ps23CustomStringConvertible", "A"]
+- ["Ps23CustomStringConvertible", "B"]
+- ["Ps23CustomStringConvertible", "C"]
+- ["Ps23CustomStringConvertible", "D"]
+- ["Ps23CustomStringConvertible", "ans"]
+- ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "ques"]
+- ["Ps23CustomStringConvertible", "strId"]
+- ["Ps23CustomStringConvertible", ""]
+- ["Ps9Equatable", "A"]
+- ["Ps9Equatable", "B"]
+- ["Ps9Equatable", "C"]
+- ["Ps9Equatable", "D"]
+- ["Ps9Equatable", "ans"]
+- ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "ques"]
+- ["Ps9Equatable", "strId"]
+- ["Ps9Equatable", ""]
+- ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- ["Ps32ExpressibleByStringInterpolation", "init"]
+- ["Ps26ExpressibleByStringLiteral", "init"]
+- ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- ["Ps8Hashable", "A"]
+- ["Ps8Hashable", "B"]
+- ["Ps8Hashable", "C"]
+- ["Ps8Hashable", "D"]
+- ["Ps8Hashable", "ans"]
+- ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "ques"]
+- ["Ps8Hashable", "strId"]
+- ["Ps8Hashable", ""]
+- ["Ps25LosslessStringConvertible", "init"]
+- ["Ps10MirrorPath", "init"]
+- ["PSo8NSCoding", "init"]
+- ["PSo9NSCopying", "init"]
+- ["PSo16NSMutableCopying", "init"]
+- ["CSo8NSObject", "A"]
+- ["CSo8NSObject", "B"]
+- ["CSo8NSObject", "C"]
+- ["CSo8NSObject", "D"]
+- ["CSo8NSObject", "ans"]
+- ["CSo8NSObject", "deinit"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "ques"]
+- ["CSo8NSObject", "strId"]
+- ["CSo8NSObject", ""]
+- ["PSo16NSObjectProtocol", "A"]
+- ["PSo16NSObjectProtocol", "B"]
+- ["PSo16NSObjectProtocol", "C"]
+- ["PSo16NSObjectProtocol", "D"]
+- ["PSo16NSObjectProtocol", "ans"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "ques"]
+- ["PSo16NSObjectProtocol", "strId"]
+- ["PSo16NSObjectProtocol", ""]
+- ["PSo14NSSecureCoding", "init"]
+- ["CSo8NSString", "init"]
+- ["C6Quizee8QuizData", "A"]
+- ["C6Quizee8QuizData", "B"]
+- ["C6Quizee8QuizData", "C"]
+- ["C6Quizee8QuizData", "D"]
+- ["C6Quizee8QuizData", "ans"]
+- ["C6Quizee8QuizData", "deinit"]
+- ["C6Quizee8QuizData", "init"]
+- ["C6Quizee8QuizData", "ques"]
+- ["C6Quizee8QuizData", "strId"]
+- ["SS", "deinit"]
+- ["SS", "init"]
+- ["Ps16TextOutputStream", "init"]
+- ["Ps20TextOutputStreamable", "init"]
+- ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- ["Ps9_Hashable", "A"]
+- ["Ps9_Hashable", "B"]
+- ["Ps9_Hashable", "C"]
+- ["Ps9_Hashable", "D"]
+- ["Ps9_Hashable", "ans"]
+- ["Ps9_Hashable", "init"]
+- ["Ps9_Hashable", "ques"]
+- ["Ps9_Hashable", "strId"]
+- ["Ps9_Hashable", ""]
+- ["Ps21_ObjectiveCBridgeable", "init"]
+depends-nominal:
+- "Ps9AnyObject"
+- "Ps7CVarArg"
+- "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- "Ps29CustomPlaygroundQuickLookable"
+- "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- "Ps32ExpressibleByStringInterpolation"
+- "Ps26ExpressibleByStringLiteral"
+- "Ps33ExpressibleByUnicodeScalarLiteral"
+- "Ps8Hashable"
+- "Ps25LosslessStringConvertible"
+- "Ps10MirrorPath"
+- "PSo8NSCoding"
+- "PSo9NSCopying"
+- "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "PSo14NSSecureCoding"
+- "CSo8NSString"
+- "C6Quizee8QuizData"
+- "SS"
+- "Ps16TextOutputStream"
+- "Ps20TextOutputStreamable"
+- "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- "Ps34_ExpressibleByBuiltinStringLiteral"
+- "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps9_Hashable"
+- "Ps21_ObjectiveCBridgeable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/devangnathwani/Desktop/Dipti/apps/Quizee/Quizee/Quizee-Bridging-Header.h"
+- "/Users/devangnathwani/Desktop/Dipti/apps/Quizee/Quizee/FMDB.h"
+- "/Applications/Xcode8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Users/devangnathwani/Desktop/Dipti/apps/Quizee/Quizee/FMDatabase.h"
+- "/Users/devangnathwani/Desktop/Dipti/apps/Quizee/Quizee/FMResultSet.h"
+- "/Users/devangnathwani/Desktop/Dipti/apps/Quizee/Quizee/FMDatabasePool.h"
+- "/Users/devangnathwani/Desktop/Dipti/apps/Quizee/Quizee/FMDatabaseAdditions.h"
+- "/Users/devangnathwani/Desktop/Dipti/apps/Quizee/Quizee/FMDatabaseQueue.h"
+- "/Applications/Xcode8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode8.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+interface-hash: "d8c32bcc983eaeb98d59806c28d4a355"
