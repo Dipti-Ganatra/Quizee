@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -16,6 +17,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let fileManager = FileManager.default
+        
+        if !fileManager.fileExists(atPath: ModelManager.getPath(fileName: "Quizee.sqlite")){
+            print("not exist");
+            ModelManager.copyFile(fileName: "Quizee.sqlite")
+        }
         return true
     }
 

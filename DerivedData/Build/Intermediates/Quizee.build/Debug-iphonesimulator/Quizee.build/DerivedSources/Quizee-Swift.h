@@ -111,6 +111,9 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
+@import ObjectiveC;
+@import CoreGraphics;
+@import CoreFoundation;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -130,15 +133,163 @@ SWIFT_CLASS("_TtC6Quizee11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+SWIFT_CLASS("_TtC6Quizee9Constants")
+@interface Constants : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UIButton;
+@class UIStoryboardSegue;
 @class NSBundle;
 @class NSCoder;
 
-SWIFT_CLASS("_TtC6Quizee14ViewController")
-@interface ViewController : UIViewController
+SWIFT_CLASS("_TtC6Quizee18HomeViewController")
+@interface HomeViewController : UIViewController
+@property (nonatomic, copy) IBOutletCollection(UIButton) NSArray<UIButton *> * _Null_unspecified btnTopics;
 - (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
 - (void)didReceiveMemoryWarning;
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UIScrollView;
+@class UILabel;
+@class UISwipeGestureRecognizer;
+@class UIPanGestureRecognizer;
+@class NSString;
+@class NSArray;
+@class UIGestureRecognizer;
+@class UITouch;
+@class UIEvent;
+
+SWIFT_CLASS("_TtC6Quizee7MTPopUp")
+@interface MTPopUp : UIView
+@property (nonatomic, strong) UIScrollView * _Null_unspecified scrollPopup;
+@property (nonatomic, strong) UIView * _Null_unspecified viewTransperant;
+@property (nonatomic, strong) UIView * _Null_unspecified viewPopUpBG;
+@property (nonatomic, strong) UIView * _Null_unspecified viewPopUp;
+@property (nonatomic, strong) UIView * _Null_unspecified viewHeaderPopup;
+@property (nonatomic, strong) UIView * _Null_unspecified viewFooterPopup;
+@property (nonatomic, strong) UILabel * _Null_unspecified lblHeader;
+@property (nonatomic, strong) UILabel * _Null_unspecified lblMessage;
+@property (nonatomic, strong) UIButton * _Null_unspecified btnOk;
+@property (nonatomic, strong) UISwipeGestureRecognizer * _Null_unspecified gestureDown;
+@property (nonatomic, strong) UISwipeGestureRecognizer * _Null_unspecified gestureUp;
+@property (nonatomic, strong) UISwipeGestureRecognizer * _Null_unspecified gestureLeft;
+@property (nonatomic, strong) UISwipeGestureRecognizer * _Null_unspecified gestureRight;
+@property (nonatomic, strong) UIPanGestureRecognizer * _Null_unspecified panGesture;
+@property (nonatomic, strong) NSString * _Null_unspecified animation;
+@property (nonatomic, copy) void (^ _Nullable handler)(NSInteger);
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)showWithComplete:(void (^ _Nullable)(NSInteger))complete view:(UIView * _Nonnull)view animationType:(NSString * _Nonnull)animationType strMessage:(NSString * _Nonnull)strMessage btnArray:(NSArray * _Nonnull)btnArray strTitle:(NSString * _Nonnull)strTitle;
+- (void)hide:(NSInteger)indexHideDirection index:(NSInteger)index;
+- (void)tappedOnOkWithSender:(UIButton * _Nonnull)sender;
+- (void)swipeToDown:(UIGestureRecognizer * _Nonnull)gesture;
+- (void)recognizePanGestureWithSender:(UIPanGestureRecognizer * _Nonnull)sender;
+- (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
+- (void)touchesMoved:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
+- (void)touchesEnded:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
+@end
+
+@class FMDatabase;
+
+SWIFT_CLASS("_TtC6Quizee12ModelManager")
+@interface ModelManager : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) ModelManager * _Nullable sharedInstance;)
++ (ModelManager * _Nullable)sharedInstance;
++ (void)setSharedInstance:(ModelManager * _Nullable)value;
+@property (nonatomic, strong) FMDatabase * _Nullable database;
++ (ModelManager * _Nonnull)getInstance;
++ (NSString * _Nonnull)getPathWithFileName:(NSString * _Nonnull)fileName;
++ (void)copyFileWithFileName:(NSString * _Nonnull)fileName;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC6Quizee8QuizData")
+@interface QuizData : NSObject
+@property (nonatomic, copy) NSString * _Nonnull strId;
+@property (nonatomic, copy) NSString * _Nonnull ques;
+@property (nonatomic, copy) NSString * _Nonnull ans;
+@property (nonatomic, copy) NSString * _Nonnull A;
+@property (nonatomic, copy) NSString * _Nonnull B;
+@property (nonatomic, copy) NSString * _Nonnull C;
+@property (nonatomic, copy) NSString * _Nonnull D;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class NSMutableArray;
+@class NSTimer;
+
+SWIFT_CLASS("_TtC6Quizee18QuizViewController")
+@interface QuizViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified btnPrevious;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified btnNext;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified lblTimer;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified lblQues;
+@property (nonatomic, copy) IBOutletCollection(UIButton) NSArray<UIButton *> * _Null_unspecified btnOpt1;
+@property (nonatomic, strong) NSMutableArray * _Nonnull marrQuizData;
+@property (nonatomic, strong) NSMutableArray * _Nonnull marrAns;
+@property (nonatomic) NSInteger currIndex;
+@property (nonatomic) NSInteger startTime;
+@property (nonatomic) NSInteger score;
+@property (nonatomic, strong) NSTimer * _Nullable timer;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (IBAction)btnBackTapped:(id _Nonnull)sender;
+- (void)getQuizData;
+- (void)fillData;
+- (IBAction)btnOptTapped:(id _Nonnull)sender;
+- (IBAction)btnPrevTapped:(id _Nonnull)sender;
+- (IBAction)btnNextTapped:(id _Nonnull)sender;
+- (IBAction)btnFinishTapped:(id _Nonnull)sender;
+- (void)updateTime;
+- (void)okTapped;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UIWebView;
+
+SWIFT_CLASS("_TtC6Quizee22SolutionViewController")
+@interface SolutionViewController : UIViewController
+@property (nonatomic, strong) IBOutlet UIWebView * _Null_unspecified webView;
+@property (nonatomic, strong) NSMutableArray * _Nonnull marrQuizData;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (IBAction)btnBackTapped:(id _Nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface UILabel (SWIFT_EXTENSION(Quizee))
+- (CGFloat)requiredHeight;
+- (CGFloat)requiredWidth;
+@end
+
+
+@interface UIView (SWIFT_EXTENSION(Quizee))
+- (void)rotate360DegreesWithDuration:(CFTimeInterval)duration completionDelegate:(id _Nullable)completionDelegate;
+@end
+
+@class UIColor;
+@class NSNumber;
+
+@interface UIView (SWIFT_EXTENSION(Quizee))
+- (void)applyGradientWithColours:(NSArray<UIColor *> * _Nonnull)colours;
+- (void)applyGradientWithColours:(NSArray<UIColor *> * _Nonnull)colours locations:(NSArray<NSNumber *> * _Nullable)locations;
+@end
+
+
+SWIFT_CLASS("_TtC6Quizee4Util")
+@interface Util : NSObject
++ (void)showAlertWithStrTitle:(NSString * _Nonnull)strTitle strBody:(NSString * _Nonnull)strBody delegate:(id _Nullable)delegate;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 #pragma clang diagnostic pop

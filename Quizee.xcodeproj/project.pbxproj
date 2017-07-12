@@ -7,13 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		230688331EF2A2FB00A1335D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230688311EF2A2FB00A1335D /* HomeViewController.swift */; };
+		230688341EF2A2FB00A1335D /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230688321EF2A2FB00A1335D /* QuizViewController.swift */; };
+		230688391EF2A39E00A1335D /* ModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230688351EF2A39E00A1335D /* ModelManager.swift */; };
+		2306883A1EF2A39E00A1335D /* QuizData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230688361EF2A39E00A1335D /* QuizData.swift */; };
+		2306883B1EF2A39E00A1335D /* Quizee.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 230688371EF2A39E00A1335D /* Quizee.sqlite */; };
+		2306883C1EF2A39E00A1335D /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230688381EF2A39E00A1335D /* Util.swift */; };
+		230688501EF302C500A1335D /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2306884A1EF302C500A1335D /* FMDatabasePool.m */; };
+		230688511EF302C500A1335D /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 2306884C1EF302C500A1335D /* FMDatabaseQueue.m */; };
+		230688521EF302C500A1335D /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 2306884F1EF302C500A1335D /* FMResultSet.m */; };
+		230688551EF3143700A1335D /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 230688541EF3143700A1335D /* FMDatabase.m */; };
 		2324A89D1EEB04440074F30F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2324A89C1EEB04440074F30F /* AppDelegate.swift */; };
-		2324A89F1EEB04440074F30F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2324A89E1EEB04440074F30F /* ViewController.swift */; };
 		2324A8A21EEB04440074F30F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2324A8A01EEB04440074F30F /* Main.storyboard */; };
-		2324A8A41EEB04440074F30F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2324A8A31EEB04440074F30F /* Assets.xcassets */; };
 		2324A8A71EEB04440074F30F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2324A8A51EEB04440074F30F /* LaunchScreen.storyboard */; };
 		2324A8B21EEB04440074F30F /* QuizeeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2324A8B11EEB04440074F30F /* QuizeeTests.swift */; };
 		2324A8BD1EEB04440074F30F /* QuizeeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2324A8BC1EEB04440074F30F /* QuizeeUITests.swift */; };
+		2324A8D61EEB17BC0074F30F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2324A8D51EEB17BC0074F30F /* Constants.swift */; };
+		236711E31F043EF3007CDCA4 /* MTPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236711E21F043EF3007CDCA4 /* MTPopUp.swift */; };
+		2373260E1EF159E200C1229F /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2373260D1EF159E200C1229F /* libsqlite3.tbd */; };
+		23EA1E5C1EF9386700FBFC4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23EA1E5B1EF9386700FBFC4B /* Assets.xcassets */; };
+		23EC45371F0E4AC200F09F0C /* SolutionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EC45361F0E4AC200F09F0C /* SolutionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,11 +47,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		230688311EF2A2FB00A1335D /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		230688321EF2A2FB00A1335D /* QuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		230688351EF2A39E00A1335D /* ModelManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelManager.swift; sourceTree = "<group>"; };
+		230688361EF2A39E00A1335D /* QuizData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizData.swift; sourceTree = "<group>"; };
+		230688371EF2A39E00A1335D /* Quizee.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Quizee.sqlite; sourceTree = "<group>"; };
+		230688381EF2A39E00A1335D /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		230688481EF302C500A1335D /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		230688491EF302C500A1335D /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		2306884A1EF302C500A1335D /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		2306884B1EF302C500A1335D /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		2306884C1EF302C500A1335D /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		2306884D1EF302C500A1335D /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		2306884E1EF302C500A1335D /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		2306884F1EF302C500A1335D /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		230688531EF3143700A1335D /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		230688541EF3143700A1335D /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
 		2324A8991EEB04440074F30F /* Quizee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quizee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2324A89C1EEB04440074F30F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2324A89E1EEB04440074F30F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2324A8A11EEB04440074F30F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2324A8A31EEB04440074F30F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2324A8A61EEB04440074F30F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2324A8A81EEB04440074F30F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2324A8AD1EEB04440074F30F /* QuizeeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuizeeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +74,12 @@
 		2324A8B81EEB04440074F30F /* QuizeeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuizeeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2324A8BC1EEB04440074F30F /* QuizeeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizeeUITests.swift; sourceTree = "<group>"; };
 		2324A8BE1EEB04440074F30F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2324A8D51EEB17BC0074F30F /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2324A8DB1EEB1FC00074F30F /* Quizee-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Quizee-Bridging-Header.h"; sourceTree = "<group>"; };
+		236711E21F043EF3007CDCA4 /* MTPopUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTPopUp.swift; sourceTree = "<group>"; };
+		2373260D1EF159E200C1229F /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		23EA1E5B1EF9386700FBFC4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		23EC45361F0E4AC200F09F0C /* SolutionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SolutionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2373260E1EF159E200C1229F /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +115,7 @@
 				2324A8B01EEB04440074F30F /* QuizeeTests */,
 				2324A8BB1EEB04440074F30F /* QuizeeUITests */,
 				2324A89A1EEB04440074F30F /* Products */,
+				2373260C1EF159E200C1229F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +132,31 @@
 		2324A89B1EEB04440074F30F /* Quizee */ = {
 			isa = PBXGroup;
 			children = (
+				236711E21F043EF3007CDCA4 /* MTPopUp.swift */,
+				230688531EF3143700A1335D /* FMDatabase.h */,
+				230688541EF3143700A1335D /* FMDatabase.m */,
+				230688481EF302C500A1335D /* FMDatabaseAdditions.h */,
+				230688491EF302C500A1335D /* FMDatabasePool.h */,
+				2306884A1EF302C500A1335D /* FMDatabasePool.m */,
+				2306884B1EF302C500A1335D /* FMDatabaseQueue.h */,
+				2306884C1EF302C500A1335D /* FMDatabaseQueue.m */,
+				2306884D1EF302C500A1335D /* FMDB.h */,
+				2306884E1EF302C500A1335D /* FMResultSet.h */,
+				2306884F1EF302C500A1335D /* FMResultSet.m */,
+				230688311EF2A2FB00A1335D /* HomeViewController.swift */,
+				230688321EF2A2FB00A1335D /* QuizViewController.swift */,
+				230688351EF2A39E00A1335D /* ModelManager.swift */,
+				230688361EF2A39E00A1335D /* QuizData.swift */,
+				230688371EF2A39E00A1335D /* Quizee.sqlite */,
+				230688381EF2A39E00A1335D /* Util.swift */,
 				2324A89C1EEB04440074F30F /* AppDelegate.swift */,
-				2324A89E1EEB04440074F30F /* ViewController.swift */,
 				2324A8A01EEB04440074F30F /* Main.storyboard */,
-				2324A8A31EEB04440074F30F /* Assets.xcassets */,
 				2324A8A51EEB04440074F30F /* LaunchScreen.storyboard */,
 				2324A8A81EEB04440074F30F /* Info.plist */,
+				2324A8D51EEB17BC0074F30F /* Constants.swift */,
+				2324A8DB1EEB1FC00074F30F /* Quizee-Bridging-Header.h */,
+				23EA1E5B1EF9386700FBFC4B /* Assets.xcassets */,
+				23EC45361F0E4AC200F09F0C /* SolutionViewController.swift */,
 			);
 			path = Quizee;
 			sourceTree = "<group>";
@@ -123,6 +177,14 @@
 				2324A8BE1EEB04440074F30F /* Info.plist */,
 			);
 			path = QuizeeUITests;
+			sourceTree = "<group>";
+		};
+		2373260C1EF159E200C1229F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2373260D1EF159E200C1229F /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +256,7 @@
 					2324A8981EEB04440074F30F = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = SDF6LY34ZE;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					2324A8AC1EEB04440074F30F = {
@@ -235,8 +298,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2306883B1EF2A39E00A1335D /* Quizee.sqlite in Resources */,
 				2324A8A71EEB04440074F30F /* LaunchScreen.storyboard in Resources */,
-				2324A8A41EEB04440074F30F /* Assets.xcassets in Resources */,
+				23EA1E5C1EF9386700FBFC4B /* Assets.xcassets in Resources */,
 				2324A8A21EEB04440074F30F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,8 +326,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2324A89F1EEB04440074F30F /* ViewController.swift in Sources */,
+				2306883A1EF2A39E00A1335D /* QuizData.swift in Sources */,
+				230688501EF302C500A1335D /* FMDatabasePool.m in Sources */,
+				230688521EF302C500A1335D /* FMResultSet.m in Sources */,
+				230688551EF3143700A1335D /* FMDatabase.m in Sources */,
 				2324A89D1EEB04440074F30F /* AppDelegate.swift in Sources */,
+				23EC45371F0E4AC200F09F0C /* SolutionViewController.swift in Sources */,
+				230688341EF2A2FB00A1335D /* QuizViewController.swift in Sources */,
+				230688511EF302C500A1335D /* FMDatabaseQueue.m in Sources */,
+				2306883C1EF2A39E00A1335D /* Util.swift in Sources */,
+				230688331EF2A2FB00A1335D /* HomeViewController.swift in Sources */,
+				236711E31F043EF3007CDCA4 /* MTPopUp.swift in Sources */,
+				2324A8D61EEB17BC0074F30F /* Constants.swift in Sources */,
+				230688391EF2A39E00A1335D /* ModelManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,11 +488,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = SDF6LY34ZE;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Quizee/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DND.Quizee;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Quizee/Quizee-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -426,11 +508,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = SDF6LY34ZE;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Quizee/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DND.Quizee;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Quizee/Quizee-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -512,6 +600,7 @@
 				2324A8C31EEB04440074F30F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2324A8C41EEB04440074F30F /* Build configuration list for PBXNativeTarget "QuizeeTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +609,7 @@
 				2324A8C61EEB04440074F30F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2324A8C71EEB04440074F30F /* Build configuration list for PBXNativeTarget "QuizeeUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +618,7 @@
 				2324A8C91EEB04440074F30F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
